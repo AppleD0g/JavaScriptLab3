@@ -1,0 +1,72 @@
+class Film { 
+
+    private id:number;
+    private title: string;
+    private price: number;
+    private genre: string;
+    private score: number;
+    private about: string;
+
+    constructor(id: number, title: string, price: number, genre: string, score: number, about: string) {
+
+        this.id = id;
+        this.title = title;
+        this.price = price;
+        this.genre = genre;
+        this.score = score;
+        this.about = about;
+    }
+
+    getId():number{
+        return this.id;
+    }
+
+    setId(newId:number):void {
+        this.id = newId;
+    }
+
+    getTitle(): string{
+        return this.title;
+    }
+
+    setTitle(newTitle: string): void{
+        this.title = newTitle;
+    }
+
+        getPrice():number{
+        return this.price;
+    }
+
+    setPrice(newPrice:number):void {
+        this.price = newPrice;
+        }
+    
+    getGenre(): string{
+        return this.genre;
+    }
+
+    setGenre(newGenre: string): void{
+        this.genre = newGenre;
+    }
+
+     getScore():number{
+    return this.score;
+    }
+
+    setScore(newScore:number):void {
+        this.score = newScore;
+    }
+
+    getAbout(): string{
+        return this.about;
+    }
+
+    setAbout(newAbout: string): void{
+        this.about = newAbout;
+    }
+}
+
+var film1 = new Film(501, "Pets", 5, "funny", 5, "Pet is an American/Spanish psychological thriller film written by Jeremy Slater, directed by Carles Torrens, and starring Dominic Monaghan, Ksenia Solo, Jennette McCurdy, and Nathan Parsons");
+film1.setTitle("Bond");
+console.log(film1.getId() + 'name' + film1.getTitle() + 'price:' + film1.getPrice() + 'genre:' + film1.getGenre + 'rating:' + film1.getScore
+    + 'description' + film1.getAbout);
